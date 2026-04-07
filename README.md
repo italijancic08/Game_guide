@@ -1,5 +1,4 @@
 # Juego
-<<<<<<< HEAD
 Peak
 
 ## Descripcion
@@ -12,15 +11,6 @@ Peak
 3. Consejos
 4. Objetos
 5. Estrategias
-=======
-lorem
-
-## Descripcion
-- Guia interactiva de
-
-## Contenido
-m
->>>>>>> 60851a7b956c060e6ad82f901d2435c5726bec60
 
 ## Autor
 Valentino Rivas
