@@ -1,13 +1,11 @@
-# Juegos
+# Juego
 lorem
 
 ## Descripcion
-- m
-- m
-- m
+- Guia interactiva de
 
 ## Contenido
-lorem
+m
 
 ## Autor
 Valentino Rivas
