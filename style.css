@@ -38,10 +38,10 @@ header h1{
 }
 
 nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    background-color: #1a1a1a;
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    background:#1a1a1a;
 }
 
 nav li{
@@ -49,15 +49,15 @@ nav li{
 }
 
 nav a{
-    display: block;
-    padding: 15px 25px;
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
+    display:block;
+    padding:15px 25px;
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
 }
 
 nav a:hover{
-    background-color: #333;
+    background-color:var(--color-principal);
 }
 
 main{
