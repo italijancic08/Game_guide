@@ -17,15 +17,20 @@
 
 body{
     font-family: "Darumadrop One", sans-serif;
-    background-color: #0f0f0f;
-    color: #f1f1f1;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
     line-height: 1.6;
 }
 
 header{
-    background: linear-gradient(90deg, #ff0055, #9900ff);
-    text-align: center;
-    padding: 30px;
+    background: linear-gradient(
+        90deg,
+        var(--color-principal),
+        var(--color-secundario)
+    );
+    text-align:center;
+    padding:30px;
+    box-shadow:var(--sombra);
 }
 
 header h1{
