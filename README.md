@@ -25,5 +25,20 @@ La pagina incluye:
 - HTML5
 - CSS3
 
+## Mejoras visuales incorporadas
+- Implementación de una paleta de colores consistente utilizando :root.
+- Integración de una tipografía personalizada desde Google Fonts para mejorar la identidad visual del sitio.
+- Aplicación correcta del modelo de cajas mediante el uso de margin, padding y border.
+- Incorporación de sombras (box-shadow) para generar profundidad y destacar elementos importantes.
+- Uso de bordes redondeados (border-radius) en secciones, imágenes y botones.
+- Diseño de navegación estilizado con efectos hover y transiciones suaves.
+- Creación de tarjetas de contenido con separación visual y efectos interactivos al pasar el cursor.
+- Implementación de botones personalizados con cambios visuales y animaciones suaves.
+- Utilización de Flexbox para la distribución del menú de navegación.
+- Utilización de CSS Grid para organizar el contenido principal del sitio.
+- Diseño responsive mediante media queries para adaptar la interfaz a tablets y dispositivos móviles.
+- Reorganización automática del menú y del contenido en pantallas pequeñas para mejorar la experiencia de usuario.
+- Código CSS estructurado y optimizado para facilitar el mantenimiento del proyecto.
+
 ## Autor
 Valentino Rivas
