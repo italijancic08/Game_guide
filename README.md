@@ -23,6 +23,7 @@ La pagina incluye:
 
 ## Tecnologias utilizadas
 - HTML5
+- CSS3
 
 ## Autor
 Valentino Rivas
