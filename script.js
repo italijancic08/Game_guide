@@ -15,3 +15,18 @@ const tip = document.getElementById("tip");
 
 const formulario = document.getElementById("formulario");
 const mensajeError = document.getElementById("mensajeError");
+
+function mostrarConsejos(lista){
+
+    listaConsejos.innerHTML = "";
+
+    lista.forEach(function(consejo){
+
+        const li = document.createElement("li");
+        li.textContent = consejo;
+
+        listaConsejos.appendChild(li);
+
+    });
+
+}
