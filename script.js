@@ -44,3 +44,11 @@ function filtrarConsejos(){
     mostrarConsejos(resultado);
 
 }
+
+function mostrarConsejoAleatorio(){
+
+    const indice = Math.floor(Math.random() * consejos.length);
+
+    tip.textContent = consejos[indice];
+
+}
