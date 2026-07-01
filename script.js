@@ -30,3 +30,17 @@ function mostrarConsejos(lista){
     });
 
 }
+
+function filtrarConsejos(){
+
+    const texto = buscador.value.toLowerCase();
+
+    const resultado = consejos.filter(function(consejo){
+
+        return consejo.toLowerCase().includes(texto);
+
+    });
+
+    mostrarConsejos(resultado);
+
+}
