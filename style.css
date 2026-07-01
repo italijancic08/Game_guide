@@ -1,198 +1,321 @@
 @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
 
 :root{
+
     --color-principal:#ff0055;
     --color-secundario:#9900ff;
     --color-fondo:#0f0f0f;
     --color-card:#1b1b1b;
     --color-texto:#f1f1f1;
     --sombra:0 4px 12px rgba(0,0,0,0.4);
+
 }
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
 }
 
 body{
-    font-family: "Darumadrop One", sans-serif;
-    background-color: var(--color-fondo);
-    color: var(--color-texto);
-    line-height: 1.6;
+
+    font-family:"Darumadrop One", sans-serif;
+    background-color:var(--color-fondo);
+    color:var(--color-texto);
+    line-height:1.6;
+
 }
 
 header{
-    background: linear-gradient(
+
+    background:linear-gradient(
         90deg,
         var(--color-principal),
         var(--color-secundario)
     );
+
     text-align:center;
     padding:30px;
     box-shadow:var(--sombra);
+
 }
 
 header h1{
-    font-size: 2.5em;
+
+    font-size:2.5em;
+
 }
 
 nav ul{
+
     list-style:none;
     display:flex;
     justify-content:center;
     background:#1a1a1a;
+
 }
 
 nav li{
-    margin: 0;
+
+    margin:0;
+
 }
 
 nav a{
+
     display:block;
     padding:15px 25px;
     color:white;
     text-decoration:none;
-    transition:0.3s;
+    transition:.3s;
+
 }
 
 nav a:hover{
+
     background-color:var(--color-principal);
+
 }
 
 main{
+
     max-width:1100px;
     margin:30px auto;
     padding:20px;
 
     display:grid;
     gap:25px;
+
 }
 
 section{
+
     background-color:var(--color-card);
     padding:20px;
     border-radius:15px;
     box-shadow:var(--sombra);
+    transition:.3s;
 
-    transition:0.3s;
 }
 
 section:hover{
+
     transform:translateY(-5px);
-    box-shadow:0 8px 20px rgba(0,0,0,0.6);
+    box-shadow:0 8px 20px rgba(0,0,0,.6);
+
 }
 
 h2{
-    margin-bottom: 10px;
-    border-bottom: 2px solid #ff0055;
-    padding-bottom: 5px;
+
+    margin-bottom:10px;
+    border-bottom:2px solid var(--color-principal);
+    padding-bottom:5px;
+
 }
 
 h3{
-    margin-top: 15px;
+
+    margin-top:15px;
+
 }
 
-ul, ol{
-    margin-left: 20px;
-    margin-top: 10px;
+ul,
+ol{
+
+    margin-left:20px;
+    margin-top:10px;
+
 }
 
 img{
+
     width:100%;
     display:block;
     margin:15px auto;
     border-radius:10px;
     box-shadow:var(--sombra);
+
 }
 
 table{
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
+
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+
 }
 
-th, td{
-    border: 1px solid #444;
-    padding: 10px;
-    text-align: center;
+th,
+td{
+
+    border:1px solid #444;
+    padding:10px;
+    text-align:center;
+
 }
 
 th{
-    background-color: #ff0055;
+
+    background-color:var(--color-principal);
+
 }
 
 form{
-    margin-top: 15px;
+
+    margin-top:15px;
+
 }
 
-input, textarea{
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 5px;
+input,
+textarea{
+
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:5px;
+
 }
 
 input[type="submit"]{
+
     background:var(--color-principal);
     color:white;
     border:none;
     border-radius:8px;
     cursor:pointer;
+    transition:.3s;
 
-    transition:0.3s;
 }
 
 input[type="submit"]:hover{
+
     background:#cc0044;
     transform:scale(1.05);
+
+}
+
+button{
+
+    background:var(--color-principal);
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-family:inherit;
+    transition:.3s;
+    margin-top:15px;
+
+}
+
+button:hover{
+
+    background:#cc0044;
+
+}
+
+#tip{
+
+    margin-top:15px;
+    color:#7dff9d;
+    font-size:1.1rem;
+    min-height:25px;
+
+}
+
+#buscador{
+
+    margin-top:10px;
+
+}
+
+#listaConsejos{
+
+    margin-top:15px;
+
+}
+
+#listaConsejos li{
+
+    margin-bottom:10px;
+
+}
+
+#mensajeError{
+
+    margin-top:15px;
+    font-weight:bold;
+    color:red;
+
 }
 
 footer{
+
     text-align:center;
     padding:20px;
     background:#1a1a1a;
     margin-top:40px;
+
 }
 
 footer img{
-    width:3%;
-    height: auto;
+
+    width:30px;
+    height:auto;
+
 }
 
 html{
-    scroll-behavior: smooth;
+
+    scroll-behavior:smooth;
+
 }
 
 @media (max-width:768px){
 
     nav ul{
+
         flex-direction:column;
         text-align:center;
+
     }
 
     header h1{
+
         font-size:2rem;
+
     }
+
 }
 
 @media (max-width:480px){
 
     body{
+
         font-size:14px;
+
     }
 
     main{
+
         padding:10px;
+
     }
 
     section{
+
         padding:15px;
+
     }
 
     nav a{
+
         padding:12px;
+
     }
+
 }
