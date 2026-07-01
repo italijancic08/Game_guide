@@ -7,3 +7,11 @@ const consejos = [
     "Guarda las bebidas energéticas para emergencias.",
     "Observa el terreno antes de comenzar a escalar."
 ];
+
+const listaConsejos = document.getElementById("listaConsejos");
+const buscador = document.getElementById("buscador");
+const botonTip = document.getElementById("mostrarTip");
+const tip = document.getElementById("tip");
+
+const formulario = document.getElementById("formulario");
+const mensajeError = document.getElementById("mensajeError");
