@@ -52,3 +52,43 @@ function mostrarConsejoAleatorio(){
     tip.textContent = consejos[indice];
 
 }
+
+function validarFormulario(event){
+
+    event.preventDefault();
+
+    mensajeError.textContent = "";
+
+    try{
+
+        const nombre = document.getElementById("Nombre").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const mensaje = document.getElementById("mensaje").value.trim();
+
+        if(nombre === "" || email === "" || mensaje === ""){
+
+            throw new Error("Todos los campos son obligatorios.");
+
+        }
+
+        if(!email.includes("@")){
+
+            throw new Error("Ingrese un correo electrónico válido.");
+
+        }
+
+        mensajeError.style.color = "#7dff9d";
+        mensajeError.textContent = "Formulario enviado correctamente.";
+
+        formulario.reset();
+
+    }
+
+    catch(error){
+
+        mensajeError.style.color = "red";
+        mensajeError.textContent = error.message;
+
+    }
+
+}
