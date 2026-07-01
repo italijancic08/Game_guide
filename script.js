@@ -92,3 +92,23 @@ function validarFormulario(event){
     }
 
 }
+
+buscador.addEventListener("input", filtrarConsejos);
+
+botonTip.addEventListener("click", mostrarConsejoAleatorio);
+
+formulario.addEventListener("submit", validarFormulario);
+
+botonTip.addEventListener("mouseover", function(){
+
+    botonTip.style.transform = "scale(1.08)";
+
+});
+
+botonTip.addEventListener("mouseout", function(){
+
+    botonTip.style.transform = "scale(1)";
+
+});
+
+mostrarConsejos(consejos);
